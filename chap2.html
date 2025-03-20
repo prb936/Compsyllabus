@@ -1,0 +1,120 @@
+<html> <! --fr= fraction of space in grid container-->
+<head>
+<style>  
+body{
+	margin-left:25px;
+	margin-right: 25px;
+	display:grid;
+	grid-template-columns:0.5fr 4fr; 
+	}
+div{
+	background-color:#5D3FD3;
+	text-align:justify;
+	text-justify:auto;
+	padding: 20px 10px;
+	color: white;
+	font-size: 14px;
+	margin:0; 
+	}
+.head{
+  font-size: 15px;
+  text-align:center;  
+   }
+.forthatulnavbar{ 
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  display: block;
+  background-color:orange;
+  }
+li a{
+  display: block;
+  font-size: 20px;
+  color: white;
+  display:grid;
+  text-decoration:none;
+  }
+li a:hover {
+   background-color: blue;
+  color: yellow;
+  }
+li a.active {
+  background-color: yellow;
+  color: orange;
+ }
+ .formatforul{
+  margin-right:50px;
+ }
+ </style>
+ </head>
+ <body>
+		<ul class="forthatulnavbar">
+	<br>
+		<li><a href="chap1.html">Chapter 1</a> </li>
+		 <br>
+		<li><a class="active" href="chap2.html">Chapter 2 </a> </li>
+		<br>
+		<li><a href="chap3.html">Chapter 3</a> </li>
+		<br>
+		<li><a href="chap4.html"> Chapter 4 </a></li>
+		<br>
+		<li><a href=""> Chapter 5 </a></li>
+		<br>
+		<li><a href=""> Chapter 6 </a></li>
+		<br>
+	    <li><a href=""> Chapter 7 </a></li>
+		<br>
+		 <li><a href=""> Chapter 8 </a></li>
+		 <br>
+		 <li><a href=""> About    </a></li> <br>
+		</ul>
+	<div>
+<div class="head">		
+	<h1> Chapter 2: Number system and conversion Boolean Logic </h1>
+</div>
+	<div>
+<p> <h2>1's and 2's Complement </h2>
+<br>
+1's Complement: Reciprocal of 1s to 0s and 0s to 1s is its 1's complement. For eg, 1's Complement of (1011)2 is (0100)2 
+<br>
+2's Complement: Adding 1 to the 1's complement of a given binary number is its 2's complement. 
+<br>
+For eg, if (1010)2 is a given number then, its
+<br>
+1's complement is (0101)2 and 2's complement is (0101)2 +(1)2 = (0110)2 </p>
+<p>
+<h2>Introduction: Boolean Logic </h2>
+Boolean Algebra is algebra of logic, which deals with the study of binary variables and logical operation. As every data are represented in terms  binary values, we need to manipulate those values by using some certain rules and expression which we can do through Boolean algebra. It is most common and basic method to analysis and design logic circuit. It was introduced by an English mathematician George Boole. In Boolean algebra the variables can have only one of the two possible value 0 and1 (False or True). Every modern digital computers understand either this two values.
+<br> <br> 
+<h2>Boolean algebra:</h2> It is algebra of logic which could accept either of the possible two values 0 and 1 and generate a result through logical relationship and operation.
+<br> <br> 
+<h2>Boolean variable:</h2> Those entities which has either or 0 and 1 and denote some specific operation ore known as boolean variable. Simply, it is an entity in Boolean algebra which has only either of the two possible values. This variable are denoted by A, B, P, Q, X, Y, Z….
+<br> <br> 
+<h2>Boolean function (logic functions):</h2> Boolean function is an expression formed by binary variables, binary operators such as AND, OR, NOT, parentheses, and equal sign for a given set of value this boolean function gives the 0 or 1 as a result.
+<br><br>
+let us consider,
+<br><br>
+F = XYZ’+XY
+<br><br>
+Where, F is a boolean function
+<br><br>
+X, Y, Z are a boolean variable.
+
+X, Y, Z, Z’ are also literals.
+<br><br>
+<h2>Truth Table:</h2> A table which represents the input-output  relationship between of the binary variables for each logical gate called truth table. It shows the relationship between input and output in tabular form. Thus, truth table is table representing the results the logical operation of the logical operation on all possible combination of logical values.
+<br><br>
+<h2>Boolean Operator and Operands</h2>
+
+Operators are the symbols that define the specific operation. These are three basic operators used in Boolean Algebra, ie. AND, OR, NOT. Every other operations can be expressed in terms of this basic operation. For examples, NOR operator is the combination of NOT and OR operators. The three basic operators are:
+<br><br>
+a. AND Operators: AND operator is represented by “.” So, A AND B is represented by (A.B) . The  result of the AND operation is exactly same as simple arithmetic multiplication. That means result will be high (1) only when both the inputs are high. Note: A AND B can also represented bu  AˆB or AnB. 
+<br> <br>
+b. OR Operator: OR operator is represented by “+” So, A OR B is represented by (A+B) . The  result of the OR operation is exactly same as simple arithmetic addition. That means result will be low (0) if and only both the inputs are low. Note: A OR B can also represented bu  AvB or AuB.
+<br> <br>
+c. NOT Operator: NOT operator is represented by “-” or “ ’ ”  So, NOT operation of an operands A is represented as A’ . NOT operation performs negation. That means it will give high output (1) for low input (0) and vice-versa. 
+</p>
+</div>
+</body>
+</html>
+
