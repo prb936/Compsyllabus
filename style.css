@@ -1,0 +1,52 @@
+
+<html>
+<style> 
+body{
+	margin-left:25px;
+	margin-right: 25px;
+	display:grid;
+	grid-template-columns:0.5fr 4fr; 
+	}
+div{
+	background-color:#5D3FD3;
+	text-align:justify;
+	text-justify:auto;
+	padding: 20px 10px;
+	color: white;
+	font-size: 14px;
+	margin:0; 
+	}
+.head{
+  font-size: 15px;
+  text-align:center;  
+   }
+.forthatulnavbar{ 
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  display: block;
+  background-color:orange;
+  }
+.no-bullets {
+  list-style-type: none;
+  margin-right:50px;
+  }
+.formatforul{
+  margin-right:50px;
+ }
+li a{
+  display: block;
+  font-size: 20px;
+  color: white;
+  display:grid;
+  text-decoration:none;
+  }
+li a:hover {
+   background-color: blue;
+  color: yellow;
+  }
+li a.active {
+  background-color: yellow;
+  color: orange;
+ }
+ </style>
