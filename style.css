@@ -82,7 +82,7 @@ li a.active {
 	border-radius: 15px;
 }
 #chap1, #chap2, #chap3, #chap4, #chap5, #chap6, #chap7, #chap8  {
-	color: #c3e0e5; /*blue*/
+	color: #c3e0e5; /*nice blue*/
 }
 .cprogram
 { background-color:white;
@@ -91,7 +91,7 @@ li a.active {
  text-align:center;
  width=50%;
 }
-.help   {
+.help {
 	 background-color: #FDAA48;
 	 width: 50%;
 	 height: 15%;
