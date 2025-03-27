@@ -205,8 +205,7 @@ int main() { <br>
 </div>
 <h2>Program to Print a Square Pattern with Numbers </h2>
 <div class="cprogram">
-#include <stdio.h>  <br>
- 
+#include &lt stdio.h &gt  <br>  <!- for the angular brackets ->
 int main() { <br>
     int size, i, j;  <br>
 
@@ -221,10 +220,125 @@ int main() { <br>
         } <br>
         printf("\n"); <br>
     } <br>
-
     return 0; <br>
 }
 </div>
+
+
+<h2> Prime number checker </h2>
+	<div class="cprogram">
+	// P1: Prime number <br> 
+#include &lt stdio.h &gt <br>   <!- & lt and &gt for symbols ->
+	int main () <br>
+{	int i,n,c=0; <br>
+	printf("Enter to check for prime number"); <br>
+	scanf ("%d", &n); <br>
+for(i=1; i<=n; i++) <br>
+	{ <br>
+		if (n%i==0) <br>
+		{c++ ;} <br> 
+	} <br>
+	if(c==2) <br>
+	printf ("This is a prime"); <br>
+	else <br>
+	printf("Sorry, not a prime"); <br>
+return 0; <br>
+}
+	</div>
+<h3> Output </h3>
+	<img src="prime.png"> </img>
+	
+	
+<h2> Factorial of a number </h2>
+	<div class="cprogram"> <br>
+	// P2: Factorial of a number <br>
+#include &lt stdio.h &gt <br>   <!- & lt and &gt for symbols ->
+	int main() { <br>
+	int n,i, f=1; <br>
+		printf("Enter any number:"); <br>
+		scanf ("%d", &n); <br>
+for (i=n; i>=1; i--) <br>
+	{ f=f*i;} <br>
+	printf("The factorial of %d is %d", n, f); <br>
+return 0; <br>
+	} <br>
+	</div>
+<h3> Output </h3>
+	<img src="factorial.png"> </img>
+	
+<h2> Palindrome checker </h2>
+	<div class="cprogram">
+	// p3: Palindrome Checker <br>
+#include &lt stdio.h &gt <br> 	<!- & lt and &gt for symbols ->
+	int main() { <br>
+int n,a,rev=0, digit; <br>
+	printf ("Enter any number:"); <br>
+	scanf ("%d", &n); <br>
+		a=n; <br>
+	for(n=a; n!=0; n=n/10) <br>
+	{ <br>
+	digit= n%10; <br>
+	rev=rev*10 +digit; <br>
+	} <br>
+	if (rev == a) <br>
+	printf("Palindrome number"); <br>
+	else <br>
+	printf("Not a palindrome"); <br>
+return 0; <br>
+	}
+	</div>
+<h3> Output </h3>
+	<img src="palindrome.png"> </img>
+	
+	
+<h2> Fibonacci Series for n terms </h2>
+	<div class="cprogram">
+	//p4: Fibonacci series for n term <br>
+#include &lt stdio.h &gt  <br>  <!- for the angular brackets ->
+	int main() <br>
+	{ <br>
+		int a=0,b=1,c,i,n; <br>
+	printf("No of fibonacci series:"); <br>
+	scanf("%d", &n); <br>
+for(i=1; i<=n; i++)  <br>
+	{ <br>
+		c=a+b; <br>
+		printf("%d \t", a); <br>
+		a=b; <br>
+		b=c; <br>
+	} <br>
+return 0; <br>
+	} 
+	</div>
+<h3> Output </h3>
+	<img src="fibonacci.png"> </img>
+	
+	
+<h2> Perfect number </h2>
+	<div class="cprogram">
+//p5: Perfect number <br>
+	#include &lt stdio.h &gt <!- for the angular brackets duh ->
+int main() { <br>
+	int num, factor=0, check, i; <br>
+printf ("Enter any number:"); <br>
+scanf ("%d", &num); <br>
+	for (i=1; i<num; i++) <br>
+	{ <br>
+		check= num % i; <br>
+	if (check=0) <br>
+		{ factor= factor+i ;} <br>
+	} <br>
+	if (factor=num) <br>
+	printf ("Thats a perfect number"); <br>
+	else <br>
+	printf ("That is not a perfect number"); <br>
+return 0;	<br>
+}
+	</div>
+<h3> Output </h3>
+	<img src="perfectno.png"> </img>
+	
+	
 <h1 id="chap6"> Web Technology (HTML+CSS) </h1>
 
 <h2> What is HTML, and what is its role in web development? </h2>
