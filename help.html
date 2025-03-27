@@ -329,6 +329,8 @@ return 0;	<br>
 <h3> Output </h3>
 	<img src="perfectno.png"> </img>
 	
+	
+	
 <h2> Iterative Control Structures in C </h2>
 	<h3> for loop </h3>	
 <p> Def: When you know exactly how many times you want to loop through a block of code, the for loop is used. <br>
@@ -351,6 +353,9 @@ for (i=0; i<=5; i++) <br>
 return 0; <br> 
 } <br>
 </div>
+<img src="forloop.png"> </img>
+
+
 	<h3> While loop </h3>
 <p> Def: A while loop is a block of code to perform repeated task till given condition is true. When condition become false it terminates. <br>
 Syntax: <br>
@@ -374,6 +379,8 @@ printf("Executed by Pratik Raj Bista"); <br>
 return 0; <br>
 }
 </div>	
+<img src="while loop.png"> </img>
+
 
 	<h3> do while loop </h3>
 <p> Def: The do-while loop is similar to a while loop, but the difference is that do-while loop tests condition after entering the body at the end. <br>
@@ -395,17 +402,78 @@ i++; <br>
 return 0; <br>
 } <br>
 </div>	
+<img src="dowhile.png"> </img>
+
 	<h2> Arrays </h2>
 <p> Def: Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
 To create an array, define the data type (like int) and specify the name of the array followed by square brackets []. <br> </p>
 <p> 1D Array: It is a list of the variable of similar data types that allows random access and all the elements can be accessed with the help of their index. <br>
 Syntax: <br> 
 dataType arrayName[arraySize]; 
+<h3> Example </h3>
+<div class="cprogram">
+#include &ltstdio.h&gt <br>
+int main() <br>
+{  <br>
+int i,even,n; <br>
+printf ("How many elements do you want:"); <br>
+scanf("%d", &n); <br>
+printf("Enter the elements:");<br>
+int e[n]; <br>
+for (i=0; i &lt n; i++)  <br>
+{ <br> 
+scanf("%d",&e[i]);}<br>
+printf("The even numbers are:");<br>
+for (i=0; i &lt n; i++)<br>
+{even=e[i] % 2;<br>
+if(even==0)<br>
+{ printf("\n%d", e[i]);} }<br>
+printf("\nExecuted by Pratik Raj Bista");<br>
+return 0;<br>
+}
+</div>
+<br>
+<img src="1d.png"> </img>
 
 <p> 2D Array: It is a list of lists of the variable of the same data type.
 It also allows random access and all the elements can be accessed with the help of their index. </p> 
 Syntax: <br> 
 dataType arrayName[arraySize] [arraySize]; <br>
+<h3> Example </h3>
+<div class="cprogram">
+#include &lt;stdio.h&gt;<br>
+int main()<br>
+{ 
+int mat1[2][2], mat2[2][2];<br>
+int i,j;<br>
+int sum[2][2];<br>
+printf("FOR THE 1ST MARTRIX\n");<br> <br>
+for (i=0;i&lt;2;i++)<br>
+{printf("In ROW %d",i+1);<br> <br>
+for(j=0;j&lt;2; j++)<br> 
+{printf("COLUMN %d:", j+1);<br> <br>
+scanf("%d", &amp;mat1[i][j]);}}<br>
+printf("\nFOR THE 2ND MARTRIX\n");<br> <br>
+for (i=0;i&lt;2;i++)<br>
+{printf("In ROW %d\n",i+1);<br> <br>
+for(j=0;j&lt;2; j++)<br>
+{printf("COLUMN %d:", j+1);<br> <br>
+scanf("%d", &amp;mat2[i][j]);}}<br>
+for(i=0;i&lt;2;i++)<br>
+{for (j=0;j&lt;2;j++)<br>
+{sum[i][j]= mat1[i][j] +mat2[i][j];}}<br> <br>
+printf("Sum of two matrix:\n");<br>
+for(i=0;i&lt;2;i++)<br>
+{for (j=0; j&lt;2; j++)<br>
+{printf("%d \t ", sum[i][j]);<br> <br>
+if (j ==1)<br>
+{printf("\n");}}}<br>
+printf("\nExecuted by Pratik Bista");<br>
+return 0;<br>
+}
+</div>
+<br>
+<img src="2d.png" </img>
 
 	<h2> String Arrays </h2>
 <p> Def: An array of strings allows you to store and manipulate text in C. <br>
@@ -429,6 +497,8 @@ printf("\nExecuted by Pratik Bista"); <br>
 return 0; <br> 
 }
 </div>	
+<img src="stringarray.png"> </img>
+
 
 <h1 id="chap6"> Web Technology (HTML+CSS) </h1>
 
