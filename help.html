@@ -58,10 +58,6 @@ Machine code consists of binary instructions directly understood by the CPU, all
 
 <h1 id="chap2"> Number system and Boolean Logic </h1>
 
-
-<h2>What are number systems, and why are they important in computing? </h2>
-Number systems are methods for representing numbers using a consistent set of digits or symbols. They are crucial in computing because computers use binary (base-2) number systems to perform calculations. Understanding different number systems, such as binary, decimal, octal, and hexadecimal, allows for effective communication and conversion between human-readable data and machine-readable data. In computing, binary is used at the hardware level, while hexadecimal and octal are often used to simplify binary representations for human understanding.
-
 <h2>What is the binary number system?</h2>
 The binary number system is a base-2 number system that uses only two digits: 0 and 1. It is the fundamental system used by computers for processing data. Each binary digit is called a bit, and a group of eight bits is called a byte. Binary numbers are used in digital electronics and computer systems to represent data and execute instructions, as the hardware components, such as transistors, have two states: on (1) and off (0).
 
@@ -82,11 +78,6 @@ The two’s complement method is a way of representing negative numbers in binar
 <h2>What is an operating system (OS), and what are its primary functions? </h2>
 An operating system (OS) is software that manages computer hardware and software resources and provides a user interface for interaction. The primary functions of an OS include:
 <ul class="formatforul">
-<li>Memory Management: It allocates and manages memory for various programs running on the computer.
-
-<li>Process Management: It ensures the efficient execution of programs by managing processes and scheduling tasks.
-
-<li>Device Management: It controls and coordinates input/output devices like printers, monitors, and storage devices.
 
 <li>File Management: It organizes and tracks files on storage devices, enabling users and programs to store, retrieve, and manipulate data.
 
@@ -338,7 +329,107 @@ return 0;	<br>
 <h3> Output </h3>
 	<img src="perfectno.png"> </img>
 	
-	
+<h2> Iterative Control Structures in C </h2>
+	<h3> for loop </h3>	
+<p> Def: When you know exactly how many times you want to loop through a block of code, the for loop is used. <br>
+Syntax: <br>
+for (expression 1; expression 2; expression 3) { <br>
+  // code block to be executed <br>
+}
+</p>
+	<h3> Example </h3>
+<div class="cprogram">
+#include &lt stdio.h &gt <br>
+int main() <br>
+{ <br>
+int i; <br>
+for (i=0; i<=5; i++) <br>
+{printf("%d \n", i);
+} <br> 
+{printf ("Program executed by Pratik Raj Bista"); <br>
+}
+return 0; <br> 
+} <br>
+</div>
+	<h3> While loop </h3>
+<p> Def: A while loop is a block of code to perform repeated task till given condition is true. When condition become false it terminates. <br>
+Syntax: <br>
+while (condition) { <br>
+    // Body of the loop
+}
+</p>
+	<h3> Example </h3>
+<div class="cprogram">
+#include &lt stdio.h &gt <br>
+int main() <br>
+{ <br>
+int i=1; <br>
+while (i <= 5) <br>
+
+{ <br>
+printf("%d\n", i); <br>
+i++; <br>
+} <br>
+printf("Executed by Pratik Raj Bista"); <br>
+return 0; <br>
+}
+</div>	
+
+	<h3> do while loop </h3>
+<p> Def: The do-while loop is similar to a while loop, but the difference is that do-while loop tests condition after entering the body at the end. <br>
+Syntax: <br>
+do { <br>
+    // Body of the loop
+} while (condition); <br>
+<h3> Example </h3>
+<div class="cprogram">
+#include  &ltstdio.h &gt <br>
+int main() <br>
+{ <br>
+int i = 5; <br>
+do { <br>
+printf(" %d \n", i); <br>
+i++; <br> 
+} while (i < 10) <br>
+{printf("Executed by Pratik Raj Bista");} <br>
+return 0; <br>
+} <br>
+</div>	
+	<h2> Arrays </h2>
+<p> Def: Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+To create an array, define the data type (like int) and specify the name of the array followed by square brackets []. <br> </p>
+<p> 1D Array: It is a list of the variable of similar data types that allows random access and all the elements can be accessed with the help of their index. <br>
+Syntax: <br> 
+dataType arrayName[arraySize]; 
+
+<p> 2D Array: It is a list of lists of the variable of the same data type.
+It also allows random access and all the elements can be accessed with the help of their index. </p> 
+Syntax: <br> 
+dataType arrayName[arraySize] [arraySize]; <br>
+
+	<h2> String Arrays </h2>
+<p> Def: An array of strings allows you to store and manipulate text in C. <br>
+Syntax: <br> 
+char arr_name[r][m] = {s1, s2, …., sn}; <br>
+<h3> Example </h3>
+<div class="cprogram">
+#include <stdio.h> <br> 
+#include <string.h> <br> 
+int main() <br> 
+{  <br> 
+char s[50]; <br> 
+int l; <br> 
+printf("Enter a string:"); <br> 
+scanf(" %s", s); <br> 
+l = strlen(s); <br> 
+printf("The string %s has %d characters\n", s,l); <br> 
+strupr(s); <br> 
+printf("The uppercase string is %s", s); <br> 
+printf("\nExecuted by Pratik Bista"); <br> 
+return 0; <br> 
+}
+</div>	
+
 <h1 id="chap6"> Web Technology (HTML+CSS) </h1>
 
 <h2> What is HTML, and what is its role in web development? </h2>
