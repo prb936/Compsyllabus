@@ -94,7 +94,8 @@ li a.active {
 .help {
 	 background-color: #FDAA48;
 	 width: 50%;
-	 height: 15%;
+	border-radius: 10px;
+	 height: 10%;
 	 margin-left: 30%;
 	 color: white;
 	 text-align:center;
